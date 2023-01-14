@@ -2,7 +2,8 @@
 
 ## What it is
 ```
-This is a simple math questions generator for kids(G1-G5) who needs to practices match questions. If you are a parent like me who is looking for some math practices questions for the kids. This is it. 
+This is a simple math questions generator for kids(G1-G5) who needs to practices match questions. 
+If you are a parent like me who is looking for some math practices questions for the kids. This is it. 
 
 This projects including the following:
 - Additions
