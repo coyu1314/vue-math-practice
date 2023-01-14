@@ -1,0 +1,7 @@
+#works on sub directory but must add the sub dir in vue.config.js
+Options +FollowSymlinks
+Options -Indexes
+
+RewriteEngine On
+RewriteRule \.(js|css|map|jpe?g|svg|gif|png|eot|ttf|woff2?)(\?.*)?$ - [NC,QSA,L]
+RewriteRule .* index.html [NC,QSA,L]

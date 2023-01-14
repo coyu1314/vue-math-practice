@@ -1,0 +1,9 @@
+#works for root directory only, sub directory is not going to work
+<ifModule mod_rewrite.c>
+    RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</ifModule>
