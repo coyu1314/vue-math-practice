@@ -12,7 +12,8 @@ This projects including the following:
 
 You are able to select a range of numbers to generate the questions from. 
 All questions will be shuffled automatically. Once the kids finish all the 
-questions, they can click on the check answer to see if they get everything correct. If you don't like the default range, just modify it to any numbers you wish for you kids.
+questions, they can click on the check answer to see if they get everything correct. If you don't like the default range, just modify it to any numbers
+you wish for you kids.
 
 ```
 ## Project setup
