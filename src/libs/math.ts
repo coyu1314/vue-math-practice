@@ -22,8 +22,10 @@
       }
       return ok2check;
     },
-    getListNum: function(min=0, max=30){
+    getListNum: function(min_in=0, max_in=30){
       let numlist = [];
+      let min = min_in*1;
+      let max = max_in*1;
       if(min*1 >=0 && max*1 > min*1+2 && max*1 <=1000){
         
        //ok
@@ -55,6 +57,7 @@
 
     buildList: function(newList: any, largeFirst=false) {
       this.result = [];
+      const mapKey :any = {};
       if(newList){
         this.dataList = newList;
       }
@@ -66,14 +69,21 @@
               first = this.dataList[n];
               second = this.dataList[i];
             }
-            this.result.push({
-              x: first,
-              y: second,
-              result : '',
-              resp: '',
-            });
+            const key = first.toString() +'-'+second.toString();
+            console.log(key);
+            if( !(key in mapKey)){
+              mapKey[key] = '';
+              this.result.push({
+                x: first,
+                y: second,
+                result : '',
+                resp: '',
+              });
+            }
+            
           }
         }
+        console.log(mapKey);
         // console.log('Total: ' + this.result.length);
         // console.log('Final Total: ' + this.result.length);
         // console.log(this.result)
